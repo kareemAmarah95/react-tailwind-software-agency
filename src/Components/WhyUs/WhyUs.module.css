@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.background-color{
+    width: 100%;
+    height: 100vh;
+    background-color: #060606;
+    margin-top: -75px;
+    position: relative;
+}
+
+.why-us-description{
+    position: absolute;
+    left: 131px;
+    top: 301px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: regular;
+    letter-spacing: -1px;
+}
+
+.why-us-answer{
+    position: absolute;
+    left: 131px;
+    top: 379px;
+    text-align: left;
+    color: white;
+    font-size: 42px;
+    line-height: 70px;
+    font-weight: bold;
+    width: 576px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.image-card{
+    position: absolute;
+    overflow: hidden;
+    top: 320px;
+    right: 199px;
+    background: white;
+    width: 521px;
+    height: 293px;
+    z-index: 4;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.middle-right-items{
+    position: absolute;
+    top: 577px;
+    right: 43px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-holder{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.icon-holder:hover{
+    background-color: #ff242b;
+    color: #ececec;
+}
+
+.middle-right-items-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: regular;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(90deg);
+    margin-top: 51px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.middle-right-items-link:hover{
+    color: #ff242b;
+}

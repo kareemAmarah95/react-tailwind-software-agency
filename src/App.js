@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./Components/Home/Home.jsx";
+import Industries from "./Components/Industries/Industries.jsx";
+import Services from "./Components/Services/Services.jsx";
+import TechStack from "./Components/TechStack/TechStack.jsx";
+import WhyUs from "./Components/WhyUs/WhyUs.jsx";
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/industries" element={<Industries />}></Route>
+          <Route path="/techstack" element={<TechStack />}></Route>
+          <Route path="/whyus" element={<WhyUs />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

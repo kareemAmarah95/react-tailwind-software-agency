@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.nav-height{
+    height: 75px;
+}
+
+.navbarImageSize{
+    width: 184px;
+    height: 184px;
+}
+
+.link-font-family{
+    font-family: 'Poppins', sans-serif;
+}
+
+.link-hover{
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.link-hover:hover{
+    color: #ff242b;
+}
