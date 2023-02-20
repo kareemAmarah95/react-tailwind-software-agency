@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.background-color{
+    width: 100%;
+    height: 100vh;
+    background-color: #060606;
+    margin-top: -75px;
+    position: relative;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .middle-right-items{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 80%;
+        bottom: 3%;
+        left: -9%;
+    }
+    .icon-holder{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 0%;
+    }
+    .responsive-mobile-icon{
+        font-size: 1.7rem;
+    }
+    .middle-right-items-link{
+        writing-mode: unset;
+        margin-left: 10px;
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+}
+

@@ -53,7 +53,7 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     position: absolute;
-    z-index: 10;
+    z-index: 9;
     left: -28px;
     bottom: -24px;
 }
@@ -120,12 +120,66 @@
     font-weight: regular;
     text-transform: uppercase;
     color: #fff;
-    transform: rotate(90deg);
-    margin-top: 51px;
+    writing-mode: vertical-lr;
+    margin-top: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 .middle-right-items-link:hover{
     color: #ff242b;
+}
+
+
+/*Mobile View*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .navbarImageSize{
+        width: 200px;
+        height: 200px;
+        background-color: teal;
+    }
+    
+    .section-description{
+        margin: 0 auto;
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        transform: translateY(-50%);
+        font-size: 50px;
+    }
+
+    .triangle-parent{
+        left: 14%;
+        top: -33%;
+    }
+
+    .triangle-description{
+        font-size: 1.6rem;
+        top: -25px;
+    }
+
+    .middle-right-items{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 80%;
+        bottom: 3%;
+        left: -9%;
+    }
+    .icon-holder{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 0%;
+    }
+    .responsive-mobile-icon{
+        font-size: 1.7rem;
+    }
+    .middle-right-items-link{
+        writing-mode: unset;
+        margin-left: 10px;
+        font-size: 2rem;
+        margin-top: 0px;
+    }
 }

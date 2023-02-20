@@ -1,13 +1,14 @@
 import React from 'react'
 import myStyle from "./Home.module.css";
-import { FaLinkedinIn } from "react-icons/fa";
+import {BsTelephone} from "react-icons/bs" 
  const Home = () => {
+    let url = "https://calendly.com/muddahany/30min";
   return (
     <div className={`${myStyle['text-align-left']}`}>
         <div className={`${myStyle['background-image']}`}>
         <div className={`${myStyle['background-overlay']}`}></div>
         
-            <div className={`text-white ${myStyle['section-description']}`}>
+            <div className={`text-white ${myStyle['section-description']} sm:font-thin`}>
                 Premier Software Development Services  
             </div>
             <div className={`${myStyle['triangle-parent']}`}>
@@ -22,10 +23,14 @@ import { FaLinkedinIn } from "react-icons/fa";
             <div className={`${myStyle['middle-right-items']}`}>
                      {/* linkedIn Icons */}
                      <div className={`${myStyle['icon-holder']}`}>
-                     <FaLinkedinIn/>
+                     <a target="_blank" href={url}>
+                        <BsTelephone className={`${myStyle['responsive-mobile-icon']}`}/>
+                     </a>
                      </div>
                      <div className={`${myStyle['middle-right-items-link']}`}>
+                     <a target="_blank" href={url}>
                         BOOK A CALL
+                     </a>
                      </div>
             </div>
         </div>

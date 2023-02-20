@@ -77,12 +77,119 @@
     font-weight: regular;
     text-transform: uppercase;
     color: #fff;
-    transform: rotate(90deg);
-    margin-top: 51px;
+    writing-mode: vertical-lr;
+    margin-top: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 .middle-right-items-link:hover{
     color: #ff242b;
+}
+/* Tablet View */
+@media screen and (min-width: 768px) and (max-width:1200px){
+    .why-us-description{
+        top: 12%;
+        left: 6%;
+    }
+    .why-us-answer{
+        left: 6%;
+        top: 20%;
+        font-size: 2rem;
+        width: 450px;
+        line-height: 40px;
+    }
+    .image-card{
+        width: 600px;
+        height: 225px;
+        margin: 0 auto;
+        left: 5%;
+    }
+
+    .original-image{
+        height: 226px;
+        width: 600px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .middle-right-items{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 80%;
+        bottom: 3%;
+        left: -18%;
+    }
+    .icon-holder{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 0%;
+    }
+    .responsive-mobile-icon{
+        font-size: 1.5rem;
+    }
+    .middle-right-items-link{
+        writing-mode: unset;
+        margin-left: 10px;
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+}
+
+/* Mobile View */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .why-us-description{
+        top: 12%;
+        left: 6%;
+    }
+
+    .why-us-answer{
+        left: 6%;
+        top: 20%;
+        font-size: 2rem;
+        width: 450px;
+        line-height: 40px;
+    }
+
+    .image-card{
+        width: 440px;
+        height: 225px;
+        margin: 0 auto;
+        left: 6%;
+    }
+
+    .original-image{
+        height: 226px;
+        width: 440px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .middle-right-items{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 80%;
+        bottom: 3%;
+        left: -9%;
+    }
+    .icon-holder{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 0%;
+    }
+    .responsive-mobile-icon{
+        font-size: 1.5rem;
+    }
+    .middle-right-items-link{
+        writing-mode: unset;
+        margin-left: 10px;
+        font-size: 2rem;
+        margin-top: 0px;
+    }
 }

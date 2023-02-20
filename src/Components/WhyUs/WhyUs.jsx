@@ -1,8 +1,9 @@
 import React from 'react'
 import WhyUsStyle from "./WhyUs.module.css";
 import whyUsImage from "../Images/whyus-section.avif"
-import { FaLinkedinIn } from "react-icons/fa";
+import {BsTelephone} from "react-icons/bs" 
 const WhyUs = () => {
+  let url = "https://calendly.com/muddahany/30min";
   return (
     <div>
       <div className={`flex ${WhyUsStyle['background-color']}`}>
@@ -16,17 +17,21 @@ const WhyUs = () => {
                 {/* layer that holds the image */}
                 <div className={`${WhyUsStyle['image-holder']}`}>
                     {/* put the image inside the image holder */}
-                    <img src={whyUsImage} alt="card-services-image"/>
+                    <img src={whyUsImage} className={`${WhyUsStyle['original-image']}`} alt="card-services-image"/>
                 </div>
                 
             </div>
             <div className={`${WhyUsStyle['middle-right-items']}`}>
                      {/* linkedIn Icons */}
                      <div className={`${WhyUsStyle['icon-holder']}`}>
-                     <FaLinkedinIn/>
+                     <a target="_blank" href={url}>
+                        <BsTelephone className={`${WhyUsStyle['responsive-mobile-icon']}`}/>
+                      </a>
                      </div>
                      <div className={`${WhyUsStyle['middle-right-items-link']}`}>
-                        BOOK A CALL
+                     <a target="_blank" href={url}>
+                          BOOK A CALL
+                        </a>
                      </div>
             </div>
       </div>
