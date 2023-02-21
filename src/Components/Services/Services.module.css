@@ -149,9 +149,7 @@
     color: #ececec;
 }
 
-.responsive-mobile-icon{
 
-}
 
 .middle-right-items-link{
     font-family: 'Poppins', sans-serif;
@@ -168,7 +166,44 @@
 .middle-right-items-link:hover{
     color: #ff242b;
 }
-
+/*Large view*/
+@media screen and (min-width: 1200px) and (max-width:1400px){
+    .services-header{
+        width: 700px;
+    }
+    .image-card{
+        width: 400px;
+        right: 20px;
+    }
+    .middle-right-items{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 40%;
+        bottom:20%;
+        margin-top: 100px;
+        left: 0%;
+        
+    }
+    .icon-holder{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 0%;
+    }
+    .responsive-mobile-icon{
+        font-size: 1.7rem;
+    }
+    .middle-right-items-link{
+        writing-mode: unset;
+        margin-left: 10px;
+        font-size: 2rem;
+        margin-top: 0px;
+        
+    }
+   
+}
 /* Tablet View */
 @media screen and (min-width: 768px) and (max-width: 1200px){
     .services-header{

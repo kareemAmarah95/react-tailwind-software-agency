@@ -20,7 +20,19 @@
 .link-hover:hover{
     color: #ff242b;
 }
-
+/* 4k View */
+@media screen and (min-width: 1401px){
+    .right-side{
+        height: unset;
+    }
+}
+/* Large View */
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    .right-side{
+        height: unset;
+    }
+}
+/* Tablet view */
 @media screen and (min-width:768px) and (max-width:1200px){
     .right-side{
         height: unset;
